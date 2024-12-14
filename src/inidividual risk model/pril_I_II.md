@@ -40,7 +40,7 @@ i & \text{con probabilidad } q_j.
 \end{cases}
 $$
 
-**$\textbf{\Large{Teorema 1.1 (Fórmula de De Pril I)}}$**  
+# $\textbf{{Teorema 1.1 (Fórmula de De Pril I)}}$
 
 Sea  $n_{ij}$ el número de pólizas cuyos asegurados tienen tasa de mortalidad $ q_j $ y suma asegurada \( i \).  
 Suponga que $j = 1, 2, \dots, J $, e $ i = 1, 2, \dots, I $. Entonces las probabilidades $ g_x = P(S = x) $, están dadas por:
@@ -87,7 +87,9 @@ matriz_de_asegurados = [
 
 
 portafolio = Portafolio(matriz_de_asegurados, probabilidades)
+```
 
+```julia
 # Function `h` calculates auxiliary values for the portfolio
 @inline function h(p::Portafolio, i::Int64, k::Int64)
     probabilities = p.probabilities
@@ -165,4 +167,45 @@ function pril_1(p::Portafolio)
 end
 ```
 
-<image src="plots/pril_1.png" alt="Descripción de la imagen">
+
+<img src="plots/pril_1.png" alt="Descripción de la imagen" width="500px" height = "300px">
+
+
+
+# $\textbf{Proposición 1.2 (Fórmula de De Pril II)} $
+$$
+\begin{array}{l}
+\text{Sean } X_1, X_2, \ldots, X_n \text{ v.a.i.i.d. con valores en el conjunto } \{0, 1, 2, \ldots\}.\\
+\text{Para cada entero } j \geq 0, \text{ defina la probabilidad } f_j = P(X = j), \text{ y suponga } f_0 \neq 0.\\
+\text{Sea } S = X_1 + \cdots + X_n. \text{ Entonces las probabilidades } g_x = P(S = x)\\
+\text{se pueden calcular recursivamente mediante la siguiente fórmula:}\\[10pt]
+g_0 = (f_0)^n,\\[10pt]
+g_x = \frac{1}{f_0} \sum_{j=1}^x \left[j \left(\frac{n+1}{x}\right) - 1\right] f_j g_{x-j}, \quad \text{para } x \geq 1.
+
+\end{array}
+$$
+
+
+```julia
+
+# Alternative recursive probability calculation
+function pril_2(n::Int, f::Array)
+    if n == 0
+        return (f[1])^n
+    end
+
+    s = BigFloat(0)
+    for j in 1:n
+        if j + 1 > length(f)
+            break
+        end
+        s += (((j * (n + 1)) / n) - 1) * f[j + 1] * pril_2(n - j, f)
+    end
+    s *= (1 / f[1])
+    return s
+end
+
+# Example usage of pril_2
+pril_2(1, [0.5, 0.3, 0.2])
+
+```
