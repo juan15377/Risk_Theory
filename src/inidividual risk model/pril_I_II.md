@@ -176,7 +176,7 @@ end
 
 ## Fórmula de De Pril II
 
-Sean $X_1, X_2, \ldots, X_n $ v.a.i.i.d. con valores en el conjunto $\{0, 1, 2, \ldots\} $.  
+Sean $X_1, X_2, \ldots, X_n$ v.a.i.i.d. con valores en el conjunto $\{0, 1, 2, \ldots\}$.  
 Para cada entero $ j \geq 0 $, defina la probabilidad $ f_j = P(X = j) $, y suponga $ f_0 \neq 0 $.  
 Sea $ S = X_1 + \cdots + X_n $. Entonces las probabilidades $ g_x = P(S = x) $ se calculan como:
 
