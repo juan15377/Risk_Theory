@@ -172,10 +172,10 @@ end
 
 
 
-# $\textbf{Proposición 1.2 (Fórmula de De Pril II)} $
+# $\textbf{Fórmula de De Pril II} $
 $$
 \begin{array}{l}
-\text{Sean } X_1, X_2, \ldots, X_n \text{ v.a.i.i.d. con valores en el conjunto } \{0, 1, 2, \ldots\}.\\
+\text{Sean} X_1, X_2, \ldots, X_n \text{ v.a.i.i.d. con valores en el conjunto } \{0, 1, 2, \ldots\}.\\
 \text{Para cada entero } j \geq 0, \text{ defina la probabilidad } f_j = P(X = j), \text{ y suponga } f_0 \neq 0.\\
 \text{Sea } S = X_1 + \cdots + X_n. \text{ Entonces las probabilidades } g_x = P(S = x)\\
 \text{se pueden calcular recursivamente mediante la siguiente fórmula:}\\[10pt]
