@@ -40,7 +40,7 @@ i & \text{con probabilidad } q_j.
 \end{cases}
 $$
 
-**$\textbf{Teorema 1.1 (Fórmula de De Pril I)}$**  
+**$\textbf{\Large{Teorema 1.1 (Fórmula de De Pril I)}}$**  
 
 Sea  $n_{ij}$ el número de pólizas cuyos asegurados tienen tasa de mortalidad $ q_j $ y suma asegurada \( i \).  
 Suponga que $j = 1, 2, \dots, J $, e $ i = 1, 2, \dots, I $. Entonces las probabilidades $ g_x = P(S = x) $, están dadas por:
@@ -165,6 +165,4 @@ function pril_1(p::Portafolio)
 end
 ```
 
-<iframe src="plots/pril_1.png" width="100%" height="500px">
-Este navegador no soporta iframes. Descarga el PDF desde <a href="plots/pril_1.png">aquí</a>.
-</iframe>
+<image src="plots/pril_1.png" alt="Descripción de la imagen">
