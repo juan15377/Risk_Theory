@@ -13,15 +13,23 @@ Denotaremos por $Y_{ij}$ el monto real reclamado por un asegurado cuya probabili
 $$
 \begin{array}{|c|c|c|c|c|c|}
 \hline
-\textbf{Monto de la reclamación} & q_1 & q_2 & \cdots & q_j & q_J \\ \hline
-1 & n_{11} & n_{12} & \cdots & n_{1j} & n_{1J} \\ \hline
-2 & n_{21} & n_{22} & \cdots & n_{2j} & n_{2J} \\ \hline
-\cdots & \cdots & \cdots & \cdots & \cdots & \cdots \\ \hline
-i & n_{i1} & n_{i2} & \cdots & n_{ij} & n_{iJ} \\ \hline
-\cdots & \cdots & \cdots & \cdots & \cdots & \cdots \\ \hline
-I & n_{I1} & n_{I2} & \cdots & n_{Ij} & n_{IJ} \\ \hline
+\textbf{Monto de la reclamación} & q_1 & q_2 & \cdots & q_j & q_J \\
+\hline
+1 & n_{11} & n_{12} & \cdots & n_{1j} & n_{1J} \\
+\hline
+2 & n_{21} & n_{22} & \cdots & n_{2j} & n_{2J} \\
+\hline
+\cdots & \cdots & \cdots & \cdots & \cdots & \cdots \\
+\hline
+i & n_{i1} & n_{i2} & \cdots & n_{ij} & n_{iJ} \\
+\hline
+\cdots & \cdots & \cdots & \cdots & \cdots & \cdots \\
+\hline
+I & n_{I1} & n_{I2} & \cdots & n_{Ij} & n_{IJ} \\
+\hline
 \end{array}
 $$
+
 
 
 
