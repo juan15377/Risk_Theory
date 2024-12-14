@@ -129,7 +129,7 @@ ax = Axis(fig[1,1], title = "Density Function", ylabel = "proba", xlabel = "x")
 barplot!(ax, eje_x, eje_y, color = "blue", label = "Probabilities", alpha = 1)
 fig 
 
-save("pril_1.png", fig)
+save("plots/pril_1.png", fig)
 
 # Alternative recursive probability calculation
 function pril_2(n::Int, f::Array)

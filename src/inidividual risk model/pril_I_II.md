@@ -186,6 +186,7 @@ $$
 g_x = \frac{1}{f_0} \sum_{j=1}^x \left[ j \left( \frac{n+1}{x} \right) - 1 \right] f_j g_{x-j}, \quad \text{para } x \geq 1.
 $$
 
+Notas extraidas de :  http://lya.fciencias.unam.mx/lars/libros/riesgo.pdf
 
 ```julia
 
